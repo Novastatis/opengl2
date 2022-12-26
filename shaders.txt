@@ -1,0 +1,14 @@
+2 things programmer needs to:
+ 1. create custom vertex and fragment shader and write code to pass them into program
+ 2. create buffer containing verticies data and a way to interpret them
+
+3 steps to create shader
+ 1. Create shader
+ 2. Attach it to it's source code
+ 3. Compile it
+GLuint vertexShader - shader reference
+glCreateShader(TYPE) - creates shader 
+glShaderSource(SHADER, HowMuchString, SHADER_ADDRESS, NULL) - attaches shader to it's source code
+glCompileShader(SHADER) - compiles attached shader source code
+
+glBufferData(TYPE, SIZEOF, VERTICIES, STATIC/DYNAMIC_DRAW/READ/COPY)
